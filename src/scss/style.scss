@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+$gold: rgb(207, 155, 113);
+
+body {
+  background-color: rgb(250, 250, 250);
+  color: rgb(57, 57, 57);
+  font-family: "Montserrat", sans-serif;
+}
+
+.pd-l {
+  padding: 4rem;
+  @media screen and (max-width: 400px) {
+    padding: 2rem;
+  }
+}
+
+.width100 {
+  width: 100%;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.6rem;
+  color: rgb(142, 142, 142);
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: block;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  color: rgb(57, 57, 57);
+
+  &--filter {
+    color: $gold;
+    border: 1px solid $gold;
+  }
+  &:hover {
+    background-color: transparent;
+    color: rgb(57, 57, 57);
+  }
+  &:active,
+  &:focus,
+  &--add,
+  &--add:hover {
+    transition: none;
+    background-color: transparent;
+    color: $gold;
+    border: 1px solid $gold;
+  }
+  &--add {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.todo-detail {
+  &__edit-icon,
+  &__delete-icon {
+    color: $gold;
+    margin-right: 0.5rem;
+  }
+}
+
+.border-none {
+  &:hover,
+  &:focus {
+    border-color: transparent;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+}
+
+.add-icon,
+.checkbox-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.4rem;
+}
+
+.checkbox-icon--full {
+  color: $gold;
+}
